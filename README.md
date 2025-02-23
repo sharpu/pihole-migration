@@ -1,6 +1,6 @@
 # pihole-migration
 pi-hole migration from v5 to v6
-pi-hole -up / pi-hole -r works on (unspported) Rapsberry OS 10, but 
+pi-hole -up / pi-hole -r works on (unsupported) Rapsberry OS 10, but 
 https://xxx.xxx.xxx.xxx/admin leads to 403 Forbidden message
 
 # Solution
