@@ -26,6 +26,7 @@ server.port = 80
 to 
 
 server.port = 8080
+
 ^esc to stop insert mode, save file :wq!
 
 sudo vim /etc/lighttpd/conf-enabled/external.conf
@@ -48,4 +49,4 @@ Go to All settings / Websserver and API settings / webserver.domain
 change Value (from) pi.hole (to) ip-addr
 
 # Note
-Reboot to see if all changes are persistent and pi-hole v6 is still working
+Reboot, to see if all changes are persistent and pi-hole v6 is still working
