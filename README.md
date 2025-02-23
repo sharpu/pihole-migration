@@ -11,7 +11,7 @@ https://docs.pi-hole.net/main/prerequisites/#ports
 
 # Stop the lighttpd server
 It was mandatory prior to pi-hole v6, which is no more the case
-service lighttpd stop
+sudo service lighttpd stop
 Restart pi-hole
 https://pi.hole/admin is working, but https://xxx.xxx.xxx.xxx/admin is not working
 
@@ -42,7 +42,7 @@ $SERVER["socket"] == ":8443" {
 >>
 
 # Start lighttpd server again
-service lighttpd stop
+sudo service lighttpd stop
 
 # Change online in pi-hole 
 Go to All settings / Websserver and API settings / webserver.domain
