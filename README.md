@@ -7,10 +7,12 @@ check pi-hole -d
 This will show that lighttpd is using the standard ports 80 (http)/443 (https) as of 
 https://docs.pi-hole.net/main/prerequisites/#ports
 
-# Stop the lighttpd server, which was mandatory prior to pi-hole v6
+# Stop the lighttpd server, 
+It was mandatory prior to pi-hole v6, which is no more the case
 service lighttpd stop
 Restart pi-hole
 https://pi.hole/admin is working, but https://xxx.xxx.xxx.xxx/admin is not working
+
 # Change the lighttpd ports
 <<
 sudo vim /etc/lighttpd/lighttpd.conf 
@@ -33,6 +35,12 @@ to
 $SERVER["socket"] == ":8443" {
 >>
 
+# Start lighttpd server again
+service lighttpd stop
+
 # Change online in pi-hole 
 Go to All settings / Websserver and API settings / webserver.domain
 change Value (from) pi.hole (to) ip-addr
+
+# Note
+Reboot to see if all changes are persistent and pi-hole v6 is still working
