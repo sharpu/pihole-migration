@@ -33,5 +33,6 @@ to
 $SERVER["socket"] == ":8443" {
 >>
 
-# Change under All settings / Websserver and API /webserver.domain value
-from pi.hole to ip-addr
+# Change online in pi-hole 
+Go to All settings / Websserver and API settings / webserver.domain
+change Value (from) pi.hole (to) ip-addr
