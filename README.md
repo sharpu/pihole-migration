@@ -26,6 +26,7 @@ server.port = 80
 to 
 
 server.port = 8080
+^esc to stop insert mode, save file :wq!
 
 sudo vim /etc/lighttpd/conf-enabled/external.conf
 
@@ -35,6 +36,8 @@ $SERVER["socket"] == ":443" {
 to
 
 $SERVER["socket"] == ":8443" {
+
+^esc to stop insert mode, save file :wq!
 >>
 
 # Start lighttpd server again
