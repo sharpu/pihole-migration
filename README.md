@@ -5,6 +5,7 @@ https://xxx.xxx.xxx.xxx/admin leads to 403 Forbidden message
 
 # Solution
 check pi-hole -d
+
 This will show that lighttpd is using the standard ports 80 (http)/443 (https) as of 
 https://docs.pi-hole.net/main/prerequisites/#ports
 
