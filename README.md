@@ -46,7 +46,7 @@ $SERVER["socket"] == ":8443" {
 sudo service lighttpd stop
 
 # Change online in pi-hole 
-Go to All settings / Websserver and API settings / webserver.domain
+Go to All settings / Webserver and API settings / webserver.domain
 change Value (from) pi.hole (to) ip-addr
 
 # Note
